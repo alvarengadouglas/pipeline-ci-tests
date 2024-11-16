@@ -15,7 +15,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: alvarengadouglas/api-automation-rest-assured
-          #path: api-automation-rest-assured
 
       - name: Set up JDK 11 for x64
         uses: actions/setup-java@v4
@@ -44,8 +43,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: alvarengadouglas/web-automation-selenium
-        path: web-automation-selenium
-
+        
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
       with:
@@ -76,7 +74,6 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: alvarengadouglas/mobile-automation-appium-java
-        path: mobile-automation-appium-java
 
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
@@ -103,7 +100,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: alvarengadouglas/performance-automation-grafana-k6
-          path: performance-automation-grafana-k6
 
       - name: Run k6 performance tests
         run: |
